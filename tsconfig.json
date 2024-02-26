@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "useDefineForClassFields": true,
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "module": "ESNext",
+        "skipLibCheck": true,
+
+        /* Bundler mode */
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+
+        /* Linting */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+
+        /* Reglas adicionales para hacer TypeScript más restrictivo */
+        "noImplicitReturns": true, // Error si una función no tiene una declaración de retorno
+        "noImplicitAny": true, // Error si TypeScript no puede inferir el tipo 'any'
+        "strictNullChecks": true, // Habilita comprobaciones estrictas de valores nulos
+        "strictPropertyInitialization": true, // Error si las propiedades de clase no están inicializadas en el constructor
+        "noImplicitThis": true, // Error si 'this' se usa antes de ser asignado
+        "alwaysStrict": true // Aplica el modo estricto de JavaScript en todos los archivos
+    },
+    "exclude": [".eslintrc.cjs"],
+    "include": ["src"],
+    "references": [{ "path": "./tsconfig.node.json" }]
+}
