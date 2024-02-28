@@ -1,68 +1,143 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    --background: #020b14;
+    --white: #ffffff;
+    --text: #ddc494;
+    --text-off: #a09b8c;
+    --flat-icon: #cdbe91;
+    --gold-icon: #c8aa6e;
+    --gold-border: #bf9f5d;
+    --offline: #5c5b57;
+    --flat-border: #51534f;
+    --mythic-esence: #cb85d4;
+    --mythic-esence-dark: #7c62f8;
+    --orange-esence: #f29130;
+    --blue-esence: #1aa7de;
+    --blue-play: #08bbb5;
+    --yellow-coin: #e3ba3d;
+    --yellow-coin-dark: #7e5927;
+    --green-online: #009e2f;
+    --green-online-shadow: #1e825a;
+    --green-onlline-border: #36d987;
+    --red-offline: #be1e37;
+    --red-offline-dark: #400a12;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    /* Blue color palette */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    --blue-1: #cdfafa;
+    --blue-2: #0ac8b9;
+    --blue-3: #0397ab;
+    --blue-4: #005a82;
+    --blue-5: #0a323c;
+    --blue-6: #091428;
+    --blue-7: #0a1428;
+
+    /* Gold color palette */
+    --gold-1: #f0e6d2;
+    --gold-2: #c8aa6e;
+    --gold-3: #c8aa6e;
+    --gold-4: #c89b3c;
+    --gold-5: #785a28;
+    --gold-6: #463714;
+    --gold-7: #32281e;
+
+    /* Grey color palette */
+    --grey-1: #a09b8c;
+    --grey-1-5: #5b5a56;
+    --grey-2: #3c3c41;
+    --grey-3: #1e2328;
+    --grey-cool: #1e282d;
+    --hextech-black: #010a13;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+/* BeaufortforLOL - Regular */
+@font-face {
+    font-family: 'BeaufortforLOL';
+    src: url('./assets/Fonts_Package/Bea-WOFF/beaufortforlol-regular-webfont.-webfont.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-a:hover {
-  color: #535bf2;
+
+/* BeaufortforLOL - Bold */
+@font-face {
+    font-family: 'BeaufortforLOL';
+    src: url('./assets/Fonts_Package/Bea-WOFF/beaufortforlol-bold-webfont.woff')
+        format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* BeaufortforLOL - Italic */
+@font-face {
+    font-family: 'BeaufortforLOL';
+    src: url('./assets/Fonts_Package/Bea-WOFF/beaufortforlol-italic-webfont.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* BeaufortforLOL - Bold Italic */
+@font-face {
+    font-family: 'BeaufortforLOL';
+    src: url('./assets/Fonts_Package/Bea-WOFF/beaufortforlol-bolditalic-webfont.woff')
+        format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Spiegel - Regular */
+@font-face {
+    font-family: 'Spiegel';
+    src: url('./assets/Fonts_Package/Spiegel-WOFF/spiegel_tt_regular-webfont.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Spiegel - Bold */
+@font-face {
+    font-family: 'Spiegel';
+    src: url('./assets/Fonts_Package/Spiegel-WOFF/spiegel_tt_bold-webfont.woff')
+        format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Spiegel - Italic */
+@font-face {
+    font-family: 'Spiegel';
+    src: url('./assets/Fonts_Package/Spiegel-WOFF/spiegel_tt_italic-webfont.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Spiegel - Bold Italic */
+@font-face {
+    font-family: 'Spiegel';
+    src: url('./assets/Fonts_Package/Spiegel-WOFF/spiegel_tt_bold_italic-webfont.woff')
+        format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+.material-symbols-rounded {
+    font-variation-settings: 'FILL' 100, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Spiegel', sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Estilo para encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-family: 'BeaufortforLOL', sans-serif;
 }
