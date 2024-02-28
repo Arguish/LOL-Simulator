@@ -29,6 +29,9 @@
         "alwaysStrict": true // Aplica el modo estricto de JavaScript en todos los archivos
     },
     "exclude": [".eslintrc.cjs"],
-    "include": ["src"],
+    "include": ["src", "public"],
+    "files": [
+        "src/assets/LoL_Logo_Icon_Package/LoL_Icon_Flat_Gold/LoL_Icon_Flat_GOLD.tsx"
+    ],
     "references": [{ "path": "./tsconfig.node.json" }]
 }
